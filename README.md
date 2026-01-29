@@ -26,14 +26,14 @@ Copy the ralph files into your project:
 ```bash
 # From your project root
 mkdir -p scripts/ralph
-cp /path/to/ralph/ralph.sh scripts/ralph/
+cp C:/Dev/ralph/ralph.sh scripts/ralph/
 
 # Copy the prompt template for your AI tool of choice:
-cp /path/to/ralph/prompt.md scripts/ralph/prompt.md    # For Amp
+cp C:/Dev/ralph/prompt.md scripts/ralph/prompt.md    # For Amp
 # OR
-cp /path/to/ralph/CLAUDE.md scripts/ralph/CLAUDE.md    # For Claude Code
+cp C:/Dev/ralph/CLAUDE.md scripts/ralph/CLAUDE.md    # For Claude Code
 # OR
-cp /path/to/ralph/CODEX.md scripts/ralph/CODEX.md      # For Codex CLI
+cp C:/Dev/ralph/CODEX.md scripts/ralph/CODEX.md      # For Codex CLI
 
 chmod +x scripts/ralph/ralph.sh
 ```
@@ -54,6 +54,11 @@ cp -r skills/prd ~/.claude/skills/
 cp -r skills/ralph ~/.claude/skills/
 ```
 
+For Codex
+```bash
+cp -r skills/codex ~/.codex/skills
+cp -r skills/codex ~/.codex/skills
+```
 ### Configure Amp auto-handoff (recommended)
 
 Add to `~/.config/amp/settings.json`:
